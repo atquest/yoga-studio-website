@@ -1,5 +1,6 @@
-/* External dependencies first */
+/* External dependencies and local imports first */
 @import 'react-quill/dist/quill.snow.css';
+@import './styles/components.css';
 
 /* Tailwind directives */
 @tailwind base;
@@ -81,5 +82,4 @@
   }
 }
 
-/* Component-specific styles imported last - these will override Tailwind utilities */
-@import './styles/components.css';
+/* End of CSS file */
