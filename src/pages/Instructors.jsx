@@ -19,7 +19,7 @@ const Instructors = () => {
       id: 1,
       name: 'Sarah Johnson',
       role: 'Studio Owner & Lead Instructor',
-      image: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      image: '/images/instructor-1.jpg',
       bio: 'Sarah has been practicing yoga for over 15 years and teaching for 10. She specializes in Vinyasa and Power Yoga, helping students build strength and flexibility while maintaining proper alignment.',
       certifications: ['RYT-500', 'Pre/Post Natal Yoga Certified'],
       specialties: ['Vinyasa Flow', 'Power Yoga', 'Yoga for Athletes']
@@ -28,7 +28,7 @@ const Instructors = () => {
       id: 2,
       name: 'Michael Chen',
       role: 'Senior Instructor',
-      image: 'https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      image: '/images/instructor-2.jpg',
       bio: 'Michael discovered yoga during his recovery from a sports injury and fell in love with the practice. He focuses on alignment and mindful movement, helping students develop a deeper connection to their bodies.',
       certifications: ['RYT-200', 'Yoga Therapy Certification'],
       specialties: ['Alignment-Based Yoga', 'Yoga for Beginners', 'Restorative Yoga']
@@ -37,7 +37,7 @@ const Instructors = () => {
       id: 3,
       name: 'Emma Davis',
       role: 'Instructor',
-      image: 'https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      image: '/images/instructor-3.jpg',
       bio: 'Emma combines traditional yoga techniques with modern movement science to create classes that are both challenging and accessible. She believes in the transformative power of consistent practice.',
       certifications: ['RYT-200', 'Aerial Yoga Certified'],
       specialties: ['Vinyasa Flow', 'Core Strength', 'Morning Flow']
@@ -46,7 +46,7 @@ const Instructors = () => {
       id: 4,
       name: 'Robert Miller',
       role: 'Instructor',
-      image: 'https://images.unsplash.com/photo-1581803118522-7b72a50f7e9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      image: '/images/instructor-4.jpg',
       bio: 'With a background in meditation and mindfulness, Robert brings a calming presence to his classes. He specializes in slower-paced styles that encourage deep relaxation and inner awareness.',
       certifications: ['RYT-500', 'Meditation Teacher Training'],
       specialties: ['Hatha Yoga', 'Yin Yoga', 'Meditation & Mindfulness']
@@ -55,7 +55,7 @@ const Instructors = () => {
       id: 5,
       name: 'Jessica Lee',
       role: 'Instructor',
-      image: 'https://images.unsplash.com/photo-1535324492437-d8dea70a38a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80',
+      image: '/images/instructor-5.jpg',
       bio: 'Jessica focuses on creating a nurturing environment where students can explore their practice without judgment. Her classes emphasize breath connection and are suitable for all levels.',
       certifications: ['RYT-200', 'Yin Yoga Certified'],
       specialties: ['Gentle Flow', 'Restorative Yoga', 'Yoga for Stress Relief']
@@ -157,8 +157,8 @@ const Instructors = () => {
             <div className="mt-10 lg:mt-0">
               <div className="bg-white rounded-lg overflow-hidden shadow-md">
                 <img 
-                  src="https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                  alt="Yoga class" 
+                  src="/images/join-team.jpg" 
+                  alt="Yoga class in session" 
                   className="w-full h-72 object-cover"
                 />
               </div>

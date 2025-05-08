@@ -31,8 +31,8 @@ const Home = () => {
       <div className="relative bg-indigo-800 text-white">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
-            alt="Yoga pose"
+            src="/images/hero-bg.jpg"
+            alt="Serene yoga pose in a peaceful setting"
             className="object-cover w-full h-full opacity-30"
           />
         </div>
@@ -91,8 +91,8 @@ const Home = () => {
           <div className="mt-10 lg:mt-0">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="https://images.unsplash.com/photo-1599447292180-45fd84092ef4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
-                alt="Yoga class" 
+                src="/images/about-yoga.jpg" 
+                alt="Group yoga class in a bright studio space" 
                 className="w-full h-64 sm:h-72 md:h-80 object-cover"
               />
             </div>
