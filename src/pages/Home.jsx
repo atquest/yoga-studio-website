@@ -1,5 +1,6 @@
 import { useContent } from '../context/ContentContext';
 import Editor from '../components/Editor';
+import { getImagePath } from '../utils/imagePath';
 
 const Home = () => {
   const { content, updateContent } = useContent();
@@ -31,7 +32,7 @@ const Home = () => {
       <div className="relative bg-indigo-800 text-white">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="/images/hero-bg.jpg"
+            src={getImagePath('images/hero-bg.jpg')}
             alt="Serene yoga pose in a peaceful setting"
             className="object-cover w-full h-full opacity-30"
           />
@@ -91,7 +92,7 @@ const Home = () => {
           <div className="mt-10 lg:mt-0">
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
               <img 
-                src="/images/about-yoga.jpg" 
+                src={getImagePath('images/about-yoga.jpg')} 
                 alt="Group yoga class in a bright studio space" 
                 className="w-full h-64 sm:h-72 md:h-80 object-cover"
               />
