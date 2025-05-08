@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css'; // Import Quill styles
+// No need to import Quill styles here as they're already imported in index.css
 
 const Editor = ({ value, onChange, placeholder = 'Enter content here...', isAdmin = true }) => {
   const [editorValue, setEditorValue] = useState(value || '');
@@ -38,15 +38,15 @@ const Editor = ({ value, onChange, placeholder = 'Enter content here...', isAdmi
   // If not in admin mode or not editing, just render the content
   if (!isAdmin || !isEditing) {
     return (
-      <div className="editor-container">
+      <div className="editor-container prose prose-indigo max-w-none">
         <div 
-          className="content-display" 
+          className="content-display py-2" 
           dangerouslySetInnerHTML={{ __html: editorValue }} 
         />
         {isAdmin && (
           <button
             onClick={() => setIsEditing(true)}
-            className="mt-2 px-3 py-1 bg-indigo-600 text-white text-sm rounded hover:bg-indigo-700"
+            className="btn mt-2 text-sm py-1 px-3 transition duration-150 ease-in-out"
           >
             Edit
           </button>
@@ -57,7 +57,7 @@ const Editor = ({ value, onChange, placeholder = 'Enter content here...', isAdmi
 
   // Otherwise, render the editor
   return (
-    <div className="editor-container border border-gray-300 rounded">
+    <div className="editor-container border border-gray-300 rounded-md shadow-sm bg-white overflow-hidden">
       <ReactQuill
         theme="snow"
         value={editorValue}
@@ -65,12 +65,11 @@ const Editor = ({ value, onChange, placeholder = 'Enter content here...', isAdmi
         modules={modules}
         formats={formats}
         placeholder={placeholder}
-        className="min-h-[150px]"
       />
       <div className="flex justify-end p-2 bg-gray-50 border-t">
         <button
           onClick={() => setIsEditing(false)}
-          className="px-3 py-1 bg-green-600 text-white text-sm rounded hover:bg-green-700"
+          className="btn bg-green-600 hover:bg-green-700 focus:ring-green-500 text-sm py-1 px-3 transition duration-150 ease-in-out"
         >
           Done
         </button>

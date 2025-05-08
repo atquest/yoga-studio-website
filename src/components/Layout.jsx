@@ -35,10 +35,10 @@ const Layout = ({ children }) => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-3 py-2 rounded-md text-sm font-medium ${
+                  className={`nav-link ${
                     location.pathname === link.path
-                      ? 'bg-indigo-100 text-indigo-700'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                      ? 'nav-link-active'
+                      : 'nav-link-inactive'
                   }`}
                 >
                   {link.name}
@@ -75,10 +75,10 @@ const Layout = ({ children }) => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  className={`block nav-link ${
                     location.pathname === link.path
-                      ? 'bg-indigo-100 text-indigo-700'
-                      : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                      ? 'nav-link-active'
+                      : 'nav-link-inactive'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -91,7 +91,7 @@ const Layout = ({ children }) => {
       </nav>
 
       {/* Main content */}
-      <main className="flex-grow">
+      <main className="flex-grow bg-white">
         {children}
       </main>
 

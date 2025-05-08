@@ -1,3 +1,85 @@
+/* External dependencies first */
+@import 'react-quill/dist/quill.snow.css';
+
+/* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-700 bg-white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-gray-900;
+  }
+
+  /* Fix Quill editor styling in Tailwind context */
+  .ql-editor {
+    @apply min-h-[100px] text-gray-700;
+  }
+
+  .ql-editor p {
+    @apply mb-4;
+  }
+
+  .ql-container {
+    @apply font-sans text-base;
+  }
+
+  /* Content display area styles */
+  .content-display {
+    @apply prose prose-indigo max-w-none;
+  }
+
+  /* Form styles */
+  input, select, textarea {
+    @apply rounded-md border-gray-300 shadow-sm;
+  }
+
+  /* Custom button styles */
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 border border-transparent 
+           rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 
+           hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 
+           focus:ring-indigo-500;
+  }
+
+  .btn-secondary {
+    @apply bg-white text-gray-700 border-gray-300 hover:bg-gray-50;
+  }
+}
+
+/* Custom component classes */
+@layer components {
+  .section {
+    @apply py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+  }
+  
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium;
+  }
+  
+  .nav-link-active {
+    @apply bg-indigo-100 text-indigo-700;
+  }
+  
+  .nav-link-inactive {
+    @apply text-gray-700 hover:bg-gray-100 hover:text-gray-900;
+  }
+}
+
+/* Component-specific styles imported last - these will override Tailwind utilities */
+@import './styles/components.css';
